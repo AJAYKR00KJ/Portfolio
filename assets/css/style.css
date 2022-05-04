@@ -1,5 +1,46 @@
+html:focus-within {
+  scroll-behavior: smooth;
+}
 
+.samarButton {
+  box-shadow: 1px 1px 2px black, 0 0 25px #133041, 0 0 5px darkblue;
+  border: 1px solid white;padding: 5px;
+  font-size: 15px; background: none;color: white;cursor: pointer;width:200px;
+}
+.tech {
+  border: 2px solid blue;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px; 
+  color:#00183b;
+  font-weight: bold; 
+}
 
+.techhead {
+  border-left: 1px solid rgb(28, 117, 201);
+  border-right: 1px solid rgb(28, 117, 201);
+  border-top: 1px solid rgb(28, 117, 201);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; 
+  color:#00183b;
+  font-weight: bold;  
+  width:100%; 
+}
+
+.coding {
+  width: 60px;
+  height: 60px; 
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#Fade {
+  background-color: black;
+  opacity: 0.9;
+  padding-top:50px;
+  padding-bottom:50px;
+  border: 1px solid white;
+}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -206,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 50%;
-  background: url("../img/av.jpg") ;
+  background: url("../img/bg_5.jpg") ;
   background-size: cover;
 }
 
@@ -229,10 +270,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 140px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #fff; 
 }
 
 #hero p {
@@ -271,7 +312,9 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  /* padding: 10px 0; */
   overflow: hidden;
 }
 
@@ -279,24 +322,22 @@ section {
   /* background: #f5f8fd; */
 }
 
-.section-title {
-  padding-bottom: 30px;
-}
+
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 5px;
+  padding-bottom: 8px;
   position: relative;
-  color: #173b6c;
+  color: #ffffff;
 }
 
 .section-title h2::after {
   content: '';
   position: absolute;
   display: block;
-  width: 50px;
+  width: 150px;
   height: 3px;
   background: #149ddd;
   bottom: 0;
@@ -337,7 +378,7 @@ section {
 }
 
 #about { 
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/bg_6.jpg");
   background-size:cover;
   
   background-attachment: fixed;
@@ -499,7 +540,7 @@ section {
 }
 
 #resume { 
-  background: url("../img/hero-bg2.jpg");
+  background: url("../img/bg_7.jpg");
   background-size:cover;
   
   background-attachment: fixed;
@@ -606,7 +647,7 @@ section {
 }
 
 #Education { 
-  background: url("../img/hero-bg3.jpg");
+  background: url("../img/bg_8.jpg");
   background-size:cover;
   
   background-attachment: fixed;
@@ -653,7 +694,7 @@ section {
 }
 
 .project .title a {
-  color: #343a40;
+  color: #ac8009;
 }
 
 .project .title a:hover {
@@ -667,7 +708,7 @@ section {
 }
 
 #project { 
-  background: url("../img/hero-bg4.jpg");
+  background: url("../img/bg_6.jpg");
   background-size:cover;
   
   background-attachment: fixed;
@@ -682,7 +723,8 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 90px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -766,7 +808,7 @@ section {
 }
 
 #testimonials { 
-  background: url("../img/hero-bg5.jpg");
+  background: url("../img/bg_10.jpg");
   background-size:cover;
   
   background-attachment: fixed;
@@ -775,23 +817,22 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 0px;
 }
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: rgb(10, 10, 10);
   width: 100%;
+  color: white;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
-  font-size: 20px;
-  color: #149ddd;
+  font-size: 20px; 
   float: left;
   width: 44px;
-  height: 44px;
-  background: #dff3fc;
+  height: 44px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -804,14 +845,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  color: #93c0eb;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #f3f3f3;
 }
 
 .contact .info .email p {
@@ -847,10 +888,18 @@ section {
   color: #fff;
 }
 
+.frm {
+  width: 100%;
+  margin:10px;
+  border-bottom-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border: 2px solid rgb(0, 255, 200);
+  background-color: #040b14;
+  color: white;
+}
 .contact .php-email-form {
   width: 100%;
-  padding: 30px;
-  background: #fff;
+  padding: 30px; 
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -908,19 +957,11 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
 
 .contact .php-email-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
 
 .contact .php-email-form button[type="submit"] {
   background: #149ddd;
@@ -1086,7 +1127,7 @@ section {
 }
 
 #portfolio { 
-  background: url("../img/hero-bg.jpg");
+  background: url("../img/bg_11.jpg");
   background-size:cover;
   
   background-attachment: fixed;
@@ -1128,8 +1169,64 @@ section {
 
 
 #contact { 
-    background: url("../img/hero-bg2.jpg");
+    background: url("../img/bg_1.jpg");
     background-size:cover;
     
     background-attachment: fixed; 
+}
+
+#portfolio { 
+  background: url("../img/bg_9.jpg");
+  background-size:cover;
+  
+  background-attachment: fixed; 
+}
+
+#study { 
+  background: url("../img/bg_9.jpg");
+  background-size:cover;
+  
+  background-attachment: fixed; 
+}
+
+#extra { 
+  background: url("../img/bg_9.jpg");
+  background-size:cover;
+  
+  background-attachment: fixed; 
+}
+
+#experience { 
+  background: url("../img/bg_2.jpg");
+  background-size:cover;
+  
+  background-attachment: fixed; 
+}
+
+#certifi { 
+  background: url("../img/bg_5.jpg");
+  background-size:cover;
+  
+  background-attachment: fixed; 
+}
+
+#skil { 
+  background: url("../img/bg_7.jpg");
+  background-size:cover;
+  
+  background-attachment: fixed; 
+}
+
+#abut { 
+  background: url("../img/bg_2.jpg");
+  background-size:cover;
+  
+  background-attachment: fixed; 
+}
+
+#infoAjay { 
+  background: url("../img/bg_2.jpg");
+  background-size:cover;
+  
+  background-attachment: fixed; 
 }

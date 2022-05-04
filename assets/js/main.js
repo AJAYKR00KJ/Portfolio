@@ -16,31 +16,31 @@
   }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  $(document).on('click', '.nav-menu a, .scrollto', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      e.preventDefault();
-      var target = $(this.hash);
-      if (target.length) {
+  // $(document).on('click', '.nav-menu a, .scrollto', function(e) {
+  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  //     e.preventDefault();
+  //     var target = $(this.hash);
+  //     if (target.length) {
 
-        var scrollto = target.offset().top;
+  //       var scrollto = target.offset().top;
 
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+  //       $('html, body').animate({
+  //         scrollTop: scrollto
+  //       }, 1500, 'easeInOutExpo');
 
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
+  //       if ($(this).parents('.nav-menu, .mobile-nav').length) {
+  //         $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+  //         $(this).closest('li').addClass('active');
+  //       }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-        }
-        return false;
-      }
-    }
-  });
+  //       if ($('body').hasClass('mobile-nav-active')) {
+  //         $('body').removeClass('mobile-nav-active');
+  //         $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+  //       }
+  //       return false;
+  //     }
+  //   }
+  // });
 
   // Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
@@ -74,24 +74,24 @@
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');
 
-  $(window).on('scroll', function() {
-    var cur_pos = $(this).scrollTop() + 200;
+  // $(window).on('scroll', function() {
+  //   var cur_pos = $(this).scrollTop() + 200;
 
-    nav_sections.each(function() {
-      var top = $(this).offset().top,
-        bottom = top + $(this).outerHeight();
+  //   nav_sections.each(function() {
+  //     var top = $(this).offset().top,
+  //       bottom = top + $(this).outerHeight();
 
-      if (cur_pos >= top && cur_pos <= bottom) {
-        if (cur_pos <= bottom) {
-          main_nav.find('li').removeClass('active');
-        }
-        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
-      }
-      if (cur_pos < 300) {
-        $(".nav-menu ul:first li:first").addClass('active');
-      }
-    });
-  });
+  //     if (cur_pos >= top && cur_pos <= bottom) {
+  //       if (cur_pos <= bottom) {
+  //         main_nav.find('li').removeClass('active');
+  //       }
+  //       main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+  //     }
+  //     if (cur_pos < 300) {
+  //       $(".nav-menu ul:first li:first").addClass('active');
+  //     }
+  //   });
+  // });
 
   // Back to top button
   $(window).scroll(function() {
@@ -148,30 +148,30 @@
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
+  // $(".testimonials-carousel").owlCarousel({
+  //   autoplay: true,
+  //   dots: true,
+  //   loop: true,
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     768: {
+  //       items: 2
+  //     },
+  //     900: {
+  //       items: 3
+  //     }
+  //   }
+  // });
 
   // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+  // $(".portfolio-details-carousel").owlCarousel({
+  //   autoplay: true,
+  //   dots: true,
+  //   loop: true,
+  //   items: 1
+  // });
 
   // Init AOS
   function aos_init() {
