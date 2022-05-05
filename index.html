@@ -84,11 +84,11 @@
 
       <nav class="nav-menu">
         <ul> 
-          <li><a href="#abut"><i class="bx bx-user"></i> About</a></li>
-          <li><a href="#experience"><i class="bx bx-file-blank"></i> <span>Experience & Education</span></a></li>
-          <li><a href="#project"><i class="bx bx-server"></i> Projects</a></li>
-          <li><a href="#portfolio"><i class="bx bx-book-content"></i> Coding Profiles & Skills</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+          <li><a id="abu" href="#abut"><i class="bx bx-user"></i> About</a></li>
+          <li><a id="exp" href="#experience"><i class="bx bx-file-blank"></i> <span>Experience & Education</span></a></li>
+          <li><a id="prj" href="#project"><i class="bx bx-server"></i> Projects</a></li>
+          <li><a id="por" href="#portfolio"><i class="bx bx-book-content"></i> Coding Profiles & Skills</a></li>
+          <li><a id="con" href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
           <li><a href="https://bit.ly/ResumeAjaykumar" target = "_blank"><i class="bx bx-file"></i> Resume</a></li>
 
         </ul>
@@ -137,10 +137,10 @@
                     Keen to solve DSA based problems and implements this in real world problems.
                   </li>
                   <li>
-                    <b>Proficient:</b> C++ • MySQL • Git • Data Structures and Algorithms • HTML5 • CSS • C
+                    <b>Proficient:</b> Python3 • MySQL • Git • Data Structures and Algorithms • HTML5 • CSS • C
                   </li>
                   <li>
-                    <b>Familiar:</b> JavaScript • Java • C++ • Linux • ReactJS  
+                    <b>Familiar:</b> JavaScript • Java • Docker • C++ • Linux • ReactJS • Electronics Circuit Design 
                   </li>
                   <li>
                     I'm graduating in May 2022 mainly interested in backend development along with fullstack development SDE roles. 
@@ -430,21 +430,24 @@
                         <div class="progress">
                           <span class="skill">C++ <i class="val">80%</i></span>
                           <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
+                            <!-- <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div> -->
                           </div>
                         </div>
             
                         <div class="progress">
                           <span class="skill">MySQL <i class="val">70%</i></span>
                           <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:70%"></div>
+                            <!-- <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div> -->
                           </div>
                         </div>
             
                         <div class="progress">
                           <span class="skill">Data Structures and Algorithms <i class="val">85%</i></span>
                           <div class="progress-bar-wrap">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:85%"></div>
+                            <!-- <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> -->
                           </div>
                         </div>
             
@@ -455,21 +458,24 @@
                         <div class="progress">
                           <span class="skill">HTML & CSS<i class="val">70%</i></span>
                           <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:70%"></div>
+                            <!-- <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div> -->
                           </div>
                         </div>
             
                         <div class="progress">
                           <span class="skill">Java<i class="val">40%</i></span>
                           <div class="progress-bar-wrap">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width:40%"></div>
+                            <!-- <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div> -->
                           </div>
                         </div>
             
                         <div class="progress">
                           <span class="skill">Opensource, Git and Github<i class="val">65%</i></span>
                           <div class="progress-bar-wrap">
-                            <div class="progress-bar bg-warning"  role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:65%"></div>
+                            <!-- <div class="progress-bar bg-warning"  role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div> -->
                           </div>
                         </div>
             
@@ -701,7 +707,8 @@
               <button class="tech">Music</button> 
               <br><br> 
               <a href="#popup1">
-                <input id="vcfg" type="button" class="samarButton"  value="I'm Feeling Lucky">
+                <button id="vcfg" class="lkybtn-hover color-1">I'm Feeling Lucky</button>
+                <!-- <input id="vcfg" type="button" class="samarButton"  value="I'm Feeling Lucky"> -->
               </a>
             </div>
           </div> 
@@ -713,7 +720,7 @@
     <div id="popup1" class="overlay">
       <div class="popup">
         <h2>Here is nothing more, Just A random thought<br> It might make you day 🤍</h2>
-        <a class="close" href="index.html">&times;</a>
+        <a id="refresh" class="close" href="#">&times;</a>
         <div id="thought" class="content">
           I Just told you! Now Close Me 😁
         </div>
