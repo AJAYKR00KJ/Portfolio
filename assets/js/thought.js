@@ -61,4 +61,10 @@ const generateQuote = function() {
 window.onload = function() {
     generateQuote();
     document.getElementById("vcfg").addEventListener('click', generateQuote);
+    document.getElementById("refresh").addEventListener('click', generateQuote);
+    document.getElementById("con").addEventListener('click', generateQuote);
+    document.getElementById("por").addEventListener('click', generateQuote);
+    document.getElementById("prj").addEventListener('click', generateQuote);
+    document.getElementById("exp").addEventListener('click', generateQuote);
+    document.getElementById("abu").addEventListener('click', generateQuote); 
 }
